@@ -21,7 +21,7 @@ class controllerAdmin {
 		<div  id="input-select">
 			<div class="input-field col s12 m3 12">
 				<label>GRADO:</label>
-				<select>
+				<select name="grado">
 					<option value="" disabled selected>SELEC. EL GRADO</option>
 					'.$grado.'
 				</select>
@@ -39,7 +39,7 @@ class controllerAdmin {
 		<div  id="input-select">
 			<div class="input-field col s12 m3 12">
 				<label>GRUPO:</label>
-				<select>
+				<select name="grupo">
 					<option value="" disabled selected>SELEC. EL GRUPO</option>
 					'.$grupo.'
 				</select>
@@ -47,22 +47,36 @@ class controllerAdmin {
 		</div>';
 	}
 
-	public function insertAlumno(){
-		$pacienteInf = $this->modeloDoc->mostrarPaciente($_GET["paciente"]);
-		$doctorInf = $this->modeloDoc->pacienteDoctor($pacienteInf["Doctor_idDoctor"]);
-		ini_set('date.timezone','America/Mexico_City');
-		$date = date('Y-m-d H:i:s', time());
+	public function showCargo(){
+		$cargo = "";
+		$cargos = $this-> modeloAdmin->showCargoDB();
+		foreach ($cargos as $cargoBD) {
+			$cargo .= '<option value="'.$cargoBD["idCargo"].'">'.$cargoBD["NomCargo"].'</option>';
+		}
+		return '
+		<div  id="input-select">
+			<div class="input-field col s12 m3 12">
+				<label>CARGO:</label>
+				<select name="cargo">
+					<option value="" disabled selected>SELEC. EL CARGO</option>
+					'.$cargo.'
+				</select>
+			</div>
+		</div>';
+	}
 
-		 if (isset($_GET["paciente"]) && isset($_POST["apreNota"]) ) {
-			 $datosNota = array($date, $_POST["subNota"], $_POST["objeNota"], $_POST["apreNota"], $_POST["planNota"], $doctorInf["idDoctor"],$pacienteInf["idPaciente"],$pacienteInf["Hospital_idHospital"]);
-			 $query = $this->modeloDoc-> insertNotaMedica($datosNota);
+	public function insertUser(){
+		
+		if (isset($_POST["nickName"]) && isset($_POST["pass"]) ) {
+			$datosUser = array($_POST["nameUser"], $_POST["aPaterno"], $_POST["aMaterno"], $_POST["nickName"], $doctorInf["pass"],$pacienteInf["phone"],$pacienteInf["cargo"]);
+			$query = $this->modeloAdmin->insertUserDB($datosUser);
  			if ($query == TRUE) {
- 				header("location: pacientes.php");
+ 				header("location: ViewRegUser.php");
  			}else {
- 				echo '<script language="javascript">alert("Nota médica no guardada");</script>';
+ 				echo '<script language="javascript">alert("Usuario no registrado");</script>';
  			}
 		}else {
-
+			echo '<script language="javascript">alert("No se pueden seleccionar los datos");</script>';
 		}
 	}
 
