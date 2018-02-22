@@ -68,18 +68,48 @@ class controllerAdmin {
 	public function insertUser(){
 		
 		if (isset($_POST["nickName"]) && isset($_POST["pass"]) ) {
-			$datosUser = array($_POST["nameUser"], $_POST["aPaterno"], $_POST["aMaterno"], $_POST["nickName"], $doctorInf["pass"],$pacienteInf["phone"],$pacienteInf["cargo"]);
+			$datosUser = array($_POST["nameUser"], $_POST["aPaterno"], $_POST["aMaterno"],$_POST["phone"] ,$_POST["nickName"], $_POST["pass"], $_POST["cargo"]);
 			$query = $this->modeloAdmin->insertUserDB($datosUser);
  			if ($query == TRUE) {
- 				header("location: ViewRegUser.php");
+				header("location: ViewRegUser.php");
+				echo '<script language="javascript">alert("Usuario registrado con exito");</script>'; 
  			}else {
  				echo '<script language="javascript">alert("Usuario no registrado");</script>';
  			}
 		}else {
-			echo '<script language="javascript">alert("No se pueden seleccionar los datos");</script>';
+			
 		}
 	}
 
+	public function insertMateria(){
+		if( isset($_POST["nameMateria"]) && isset($_POST["grado"]) ){
+			$datosMateria = array($_POST["nameMateria"]) && isset($_POST["grado"]);
+			$query = $this->modeloAdmin->insertMateriaDB($datosMateria);
+			if($query == TRUE){
+				header("location: ViewRegMat.php");
+				echo '<script language="javascript">alert("La materia se registro con exito");</script>';
+			}else{
+				echo '<script language="javascript">alert("La materia no se pudo registrar");</script>';
+			}
+		}else{
+
+		}
+	}
+
+	public function asignarMateria(){
+		if( isset($_POST["nameMateria"]) && isset($_POST["grado"]) ){
+			$datosMateria = array($_POST["nameMateria"]) && isset($_POST["grado"]);
+			$query = $this->modeloAdmin->insertMateriaDB($datosMateria);
+			if($query == TRUE){
+				header("location: ViewRegMat.php");
+				echo '<script language="javascript">alert("La materia se registro con exito");</script>';
+			}else{
+				echo '<script language="javascript">alert("La materia no se pudo registrar");</script>';
+			}
+		}else{
+			
+		}
+	}
 
 
 

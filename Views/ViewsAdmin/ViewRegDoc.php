@@ -99,23 +99,6 @@
                           <label for="password">TELEFONO:</label>
                         </div>
 
-                        <div class="input-field col s12 m3 12">
-                          <i class="material-icons prefix">sort_by_alph</i>
-                          <input id="password5" type="text" class="validate" placeholder="#43">
-                          <label for="password">GRADO:</label>
-                        </div>
-
-                        <div class="input-field col s12 m3 12">
-                          <i class="material-icons prefix">sort_by_alpha</i>
-                          <input id="password5" type="number" class="validate" placeholder="1">
-                          <label for="password">GRUPO:</label>
-                        </div>
-
-                        <div class="input-field col s12 m3 12">
-                          <input id="password5" type="text" class="validate" placeholder="hoy">
-                          <label for="password">STATUS:</label>
-                        </div>
-
                         <div class="input-field col s6 offset-s9">
                             <button class="medium btn-large cyan waves-effect waves-light" type="submit" name="action">
                               <i class="material-icons left">person_add</i> REGISTRAR DOCENTE
