@@ -1,7 +1,7 @@
 <?php
 	/**
 	 * @author Marcos Felipe Frías Martínez
-	 * 
+	 *
 	 */
 	class modelAdmin extends ConexionDataBase {
 
@@ -30,7 +30,7 @@
 		}
 
 		public function showPeriodoDB(){
-			return $this->ConsultaNormal("SELECT * FROM periodoaca");
+			return $this->ConsultaNormal("SELECT * FROM periodoacademico");
 		}
 
 		public function idDocenteDB($docente){

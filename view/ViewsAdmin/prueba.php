@@ -1,8 +1,8 @@
-<?php 
-	include_once "../../models/conexion.php";
-	include_once "../../models/estructura/estructura.php";
-	include_once "../../models/modelAdmin/modeloAdmin.php";
-	include_once "../../controllers/controllerAdmin/contAdmin.php";
+<?php
+	include_once "../../model/ConexionDataBase.php";
+	include_once "../../model/estructura/estructura.php";
+	include_once "../../model/modelAdmin/modeloAdmin.php";
+	include_once "../../controller/controllerAdmin/contAdmin.php";
 
 	$estructura = new estructuraGeneral();
 	$estructuraAdmin = new estructuraAdmin();
@@ -44,7 +44,7 @@
 	</head>
 
 	<body>
-	
+
 		<?php echo $estructura->loadPage()  ?>
 		<?php echo $estructura->headerPage()?>
 
@@ -63,7 +63,7 @@
                             <li class="tab"><a class="center-align" href="#test3"><strong>REGISTRO DE MAESTROS</strong></a></li>
                             <li class="tab"><a class="center-align" href="#test4"><strong>REGISTRO DE MATERIAS</strong></a></li>
                         </ul>
-                        
+
                         <div id="test1" class="col s12">
                             <div class="col s12 m12 l6">
                                 <div class="row">
@@ -183,7 +183,7 @@
                                                 <input id="aMaternoDoc" name="aMaternoDoc" type="text" class="validate">
                                                 <label for="aMaternoDoc">APELLIDO MATERNO:</label>
                                             </div>
-                                        
+
                                             <div class="input-field col s12 m3 12">
                                                 <i class="material-icons prefix">list</i>
                                                 <input id="matriculaDoc" name="matriculaDoc" type="text" class="validate">
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                         <div id="test4" class="col s12">
-                            
+
                         </div>
 
                     </div>

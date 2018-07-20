@@ -1,8 +1,8 @@
 <?php
-	include_once "../../models/conexion.php";
-	include_once "../../models/estructura/estructura.php";
-	include_once "../../models/modelAdmin/modeloAdmin.php";
-	include_once "../../controllers/controllerAdmin/contAdmin.php";
+	include_once "../../model/ConexionDataBase.php";
+	include_once "../../model/estructura/estructura.php";
+	include_once "../../model/modelAdmin/modeloAdmin.php";
+	include_once "../../controller/controllerAdmin/contAdmin.php";
 
 	$estructura = new estructuraGeneral();
 	$estructuraAdmin = new estructuraAdmin();
@@ -106,7 +106,7 @@
 					</div>
 
 				</section>
-				
+
 			</div>
 
 		</div>

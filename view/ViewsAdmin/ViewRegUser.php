@@ -1,13 +1,11 @@
-<?php 
-  include_once "../../models/conexion.php";
-  include_once "../../models/estructura/estructura.php";
-  include_once "../../models/modelAdmin/modeloAdmin.php";
-  include_once "../../controllers/controllerAdmin/contAdmin.php";
-  
+<?php
+  include_once "../../model/ConexionDataBase.php";
+  include_once "../../model/estructura/estructura.php";
+  include_once "../../model/modelAdmin/modeloAdmin.php";
+  include_once "../../controller/controllerAdmin/contAdmin.php";
   $estructura = new estructuraGeneral();
   $estructuraAdmin = new estructuraAdmin();
   $adminController = new controllerAdmin();
-
   $adminController->insertUser();
 
 ?>
@@ -21,7 +19,6 @@
 		<meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
 		<meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
 		<title>Registro Usuarios - Tantli</title>
-
 		<!-- Favicons-->
 		<link rel="icon" href="../../assets/images/favicon/estoma.png" sizes="32x32">
 		<!-- Favicons-->
@@ -29,24 +26,19 @@
 		<!-- For iPhone -->
 		<meta name="msapplication-TileColor" content="#00bcd4">
 		<meta name="msapplication-TileImage" content="../../assets/images/favicon/mstile-144x144.png">
-		<!-- For Windows Phone -->
-
 		<!-- CORE CSS-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="../../assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="../../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<!-- Custome CSS-->
 		<link href="../../assets/css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
-
 		<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
 		<link href="../../assets/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="../../assets/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="../../assets/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 	</head>
-
 	<body>
-	
 		<?php echo $estructura->loadPage()  ?>
 		<?php echo $estructura->headerPage()?>
 

@@ -1,9 +1,9 @@
-<?php 
-	include_once "../../models/conexion.php";
-	include_once "../../models/estructura/estructura.php";
-	include_once "../../models/modelAdmin/modeloAdmin.php";
-	include_once "../../controllers/controllerAdmin/contAdmin.php";
-	
+<?php
+	include_once "../../model/ConexionDataBase.php";
+	include_once "../../model/estructura/estructura.php";
+	include_once "../../model/modelAdmin/modeloAdmin.php";
+	include_once "../../controller/controllerAdmin/contAdmin.php";
+
 	$estructura = new estructuraGeneral();
 	$estructuraAdmin = new estructuraAdmin();
 	$adminController = new controllerAdmin();
@@ -55,7 +55,7 @@
 
 			<div class="wrapper">
 				<?php echo $estructuraAdmin->menuAdmin()  ?>
-				
+
 				<section id="content">
 
 					<div class="container">
@@ -80,7 +80,7 @@
 
 											<div class="input-field col s3 offset-s1">
 												<button class="medium btn-large cyan waves-effect waves-light" type="submit" name="action">
-													<i class="material-icons left">add</i> REGISTRAR MATERIA 
+													<i class="material-icons left">add</i> REGISTRAR MATERIA
 												</button>
 											</div>
 										</div>

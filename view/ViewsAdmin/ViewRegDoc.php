@@ -1,9 +1,9 @@
-<?php 
-  include_once "../../models/conexion.php";
-	include_once "../../models/estructura/estructura.php";
-	include_once "../../models/modelAdmin/modeloAdmin.php";
-  include_once "../../controllers/controllerAdmin/contAdmin.php";
-  
+<?php
+  include_once "../../model/ConexionDataBase.php";
+  include_once "../../model/estructura/estructura.php";
+  include_once "../../model/modelAdmin/modeloAdmin.php";
+  include_once "../../controller/controllerAdmin/contAdmin.php";
+
   $estructura = new estructuraGeneral();
   $estructuraAdmin = new estructuraAdmin();
   $adminController = new controllerAdmin();
@@ -47,11 +47,11 @@
 
     <?php echo $estructura->loadPage() ?>
     <?php echo $estructura->headerPage()?>
-    
+
     <div id="main">
 
       <div class="wrapper">
-        
+
         <?php echo $estructuraAdmin->menuAdmin()  ?>
         <section id="content">
 
@@ -62,7 +62,7 @@
                 <div class="divider"></div><div class="divider"></div><div class="divider"></div>
                 <h1 class="center-align"> <strong>REGISTRO DE DOCENTES</strong></h1>
                 <div class="divider"></div><div class="divider"></div><div class="divider"></div>
-                
+
                 <div class="col s12 m12 l6">
 
                   <div class="row">
@@ -88,7 +88,7 @@
                           <input id="aMaternoDoc" name="aMaternoDoc" type="text" class="validate">
                           <label for="aMaternoDoc">APELLIDO MATERNO:</label>
                         </div>
-						
+
                         <div class="input-field col s12 m3 12">
                           <i class="material-icons prefix">list</i>
                           <input id="matriculaDoc" name="matriculaDoc" type="text" class="validate">
@@ -110,11 +110,11 @@
                       </div>
 
                     </form>
-                    
+
                   </div>
 
                 </div>
-              
+
               </div>
 
             </div>
@@ -123,7 +123,7 @@
 
       </div>
     </div>
-  
+
       <?php echo $estructura->footerPage()  ?>
 
       <!-- ============== Scripts ====================== -->
