@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--================================================================================
-	Item Name: Materialize - Material Design Admin Template
-	Version: 3.1
-	Author: GeeksLabs
-	Author URL: http://www.themeforest.net/user/geekslabs
-================================================================================ -->
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -18,9 +10,9 @@
   <title>Profile Page | Materialize - Material Design Admin Template</title>
 
   <!-- Favicons-->
-  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="../assets/images/favicon/favicon-32x32.png" sizes="32x32">
   <!-- Favicons-->
-  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon-precomposed" href="../assets/images/favicon/apple-touch-icon-152x152.png">
   <!-- For iPhone -->
   <meta name="msapplication-TileColor" content="#00bcd4">
   <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
@@ -28,70 +20,65 @@
 
 
   <!-- CORE CSS-->
-  
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!-- Custome CSS-->    
-    <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+  <link href="../assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="../assets/css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
 
 <body>
   <!-- Start Page Loading -->
   <div id="loader-wrapper">
-      <div id="loader"></div>        
+      <div id="loader"></div>
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
   </div>
   <!-- End Page Loading -->
-
-  <!-- //////////////////////////////////////////////////////////////////////////// -->
-
   <!-- START HEADER -->
   <header id="header" class="page-topbar">
-        <!-- start header nav-->
-        <div class="navbar-fixed">
-            <nav class="navbar-color">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class="navbar-color">
                 <div class="nav-wrapper">
-                    <ul class="left">                      
-                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+                    <ul class="left">
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="../assets/images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
                     </ul>
                     <div class="header-search-wrapper hide-on-med-and-down">
                         <i class="mdi-action-search"></i>
                         <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
                     </div>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="images/flag-icons/United-States.png" alt="USA" /></a>
-                        </li>
-                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
-                        </li>
-                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
-                        
-                        </a>
-                        </li>                        
-                        <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
-                        </li>
+                      <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="../assets/images/flag-icons/United-States.png" alt="USA" /></a>
+                      </li>
+                      <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                      </li>
+                      <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i></a>
+                      </li>
+                      <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                      </li>
                     </ul>
                     <!-- translation-button -->
                     <ul id="translation-dropdown" class="dropdown-content">
                       <li>
-                        <a href="#!"><img src="images/flag-icons/United-States.png" alt="English" />  <span class="language-select">English</span></a>
+                        <a href="#!"><img src="../assets/images/flag-icons/United-States.png" alt="English" />  <span class="language-select">English</span></a>
                       </li>
                       <li>
-                        <a href="#!"><img src="images/flag-icons/France.png" alt="French" />  <span class="language-select">French</span></a>
+                        <a href="#!"><img src="../assets/images/flag-icons/France.png" alt="French" />  <span class="language-select">French</span></a>
                       </li>
                       <li>
-                        <a href="#!"><img src="images/flag-icons/China.png" alt="Chinese" />  <span class="language-select">Chinese</span></a>
+                        <a href="#!"><img src="../assets/images/flag-icons/China.png" alt="Chinese" />  <span class="language-select">Chinese</span></a>
                       </li>
                       <li>
-                        <a href="#!"><img src="images/flag-icons/Germany.png" alt="German" />  <span class="language-select">German</span></a>
+                        <a href="#!"><img src="../assets/images/flag-icons/Germany.png" alt="German" />  <span class="language-select">German</span></a>
                       </li>
-                      
+
                     </ul>
                     <!-- notifications-dropdown -->
                     <ul id="notifications-dropdown" class="dropdown-content">
@@ -122,25 +109,21 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-        <!-- end header nav-->
+    </div>
+    <!-- end header nav-->
   </header>
   <!-- END HEADER -->
-
-  <!-- //////////////////////////////////////////////////////////////////////////// -->
-
   <!-- START MAIN -->
   <div id="main">
     <!-- START WRAPPER -->
     <div class="wrapper">
-
       <!-- START LEFT SIDEBAR NAV-->
       <aside id="left-sidebar-nav">
         <ul id="slide-out" class="side-nav fixed leftside-navigation">
             <li class="user-details cyan darken-2">
             <div class="row">
                 <div class="col col s4 m4 l4">
-                    <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    <img src="../assets/images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
                 </div>
                 <div class="col col s8 m8 l8">
                     <ul id="profile-dropdown" class="dropdown-content">
@@ -182,8 +165,8 @@
             <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
             </li>
             <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="css-typography.html">Typography</a>
@@ -201,7 +184,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="ui-alerts.html">Alerts</a>
@@ -233,7 +216,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-av-queue"></i> Advanced UI <span class="new badge"></span></a>
+                <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-av-queue"></i> Advanced UI <span class="new badge"></span></a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="advanced-ui-chips.html">Chips</a>
@@ -257,9 +240,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets</a>
+                <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets</a>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="table-basic.html">Basic Tables</a>
@@ -275,7 +258,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms <span class="new badge"></span></a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms <span class="new badge"></span></a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="form-elements.html">Form Elements</a>
@@ -291,9 +274,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
                         <div class="collapsible-body">
-                            <ul>                                        
+                            <ul>
                                 <li><a href="page-contact.html">Contact Page</a>
                                 </li>
                                 <li><a href="page-todo.html">ToDos</a>
@@ -311,11 +294,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
                         <div class="collapsible-body">
                             <ul>
                                 <li><a href="eCommerce-products-page.html">Products Page</a>
-                                </li>                                        
+                                </li>
                                 <li><a href="eCommerce-pricing.html">Pricing Table</a>
                                 </li>
                                 <li><a href="eCommerce-invoice.html">Invoice</a>
@@ -323,9 +306,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
                         <div class="collapsible-body">
-                            <ul>                                        
+                            <ul>
                                 <li><a href="media-gallary-page.html">Gallery Page</a>
                                 </li>
                                 <li><a href="media-hover-effects.html">Image Hover Effects</a>
@@ -333,43 +316,42 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan active"><i class="mdi-action-account-circle"></i> User</a>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-cyan active"><i class="mdi-action-account-circle"></i> User</a>
                         <div class="collapsible-body">
-                            <ul>     
+                            <ul>
                                 <li class="active"><a href="user-profile-page.html">User Profile</a>
-                                </li>                                   
+                                </li>
                                 <li><a href="user-login.html">Login</a>
-                                </li>                                        
+                                </li>
                                 <li><a href="user-register.html">Register</a>
                                 </li>
                                 <li><a href="user-forgot-password.html">Forgot Password</a>
                                 </li>
                                 <li><a href="user-lock-screen.html">Lock Screen</a>
-                                </li>                                        
-                                
+                                </li>
+
                             </ul>
                         </div>
                     </li>
-                    
-                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="charts-chartjs.html">Chart JS</a>
-                                </li>
-                                <li><a href="charts-chartist.html">Chartist</a>
-                                </li>
-                                <li><a href="charts-morris.html">Morris Charts</a>
-                                </li>
-                                <li><a href="charts-xcharts.html">xCharts</a>
-                                </li>
-                                <li><a href="charts-flotcharts.html">Flot Charts</a>
-                                </li>
-                                <li><a href="charts-sparklines.html">Sparkline Charts</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
+                  <div class="collapsible-body">
+                      <ul>
+                          <li><a href="charts-chartjs.html">Chart JS</a>
+                          </li>
+                          <li><a href="charts-chartist.html">Chartist</a>
+                          </li>
+                          <li><a href="charts-morris.html">Morris Charts</a>
+                          </li>
+                          <li><a href="charts-xcharts.html">xCharts</a>
+                          </li>
+                          <li><a href="charts-flotcharts.html">Flot Charts</a>
+                          </li>
+                          <li><a href="charts-sparklines.html">Sparkline Charts</a>
+                          </li>
+                      </ul>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li class="li-hover"><div class="divider"></div></li>
             <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
@@ -382,13 +364,13 @@
             <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
             </li>
             <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
-            </li>                    
+            </li>
             <li class="li-hover"><div class="divider"></div></li>
             <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
             <li class="li-hover">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <div class="sample-chart-wrapper">                            
+                        <div class="sample-chart-wrapper">
                             <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
                         </div>
                     </div>
@@ -402,38 +384,36 @@
       <!-- //////////////////////////////////////////////////////////////////////////// -->
 
       <!-- START CONTENT -->
-      <section id="content">        
-
+      <section id="content">
         <!--start container-->
         <div class="container">
-
           <div id="profile-page" class="section">
             <!-- profile-page-header -->
             <div id="profile-page-header" class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/user-profile-bg.jpg" alt="user background">                    
+                    <img class="activator" src="../assets/images/user-profile-bg.jpg" alt="user background">
                 </div>
                 <figure class="card-profile-image">
-                    <img src="images/avatar.jpg" alt="profile image" class="circle z-depth-2 responsive-img activator">
+                    <img src="../assets/images/avatar.jpg" alt="profile image" class="circle z-depth-2 responsive-img activator">
                 </figure>
                 <div class="card-content">
-                  <div class="row">                    
-                    <div class="col s3 offset-s2">                        
+                  <div class="row">
+                    <div class="col s3 offset-s2">
                         <h4 class="card-title grey-text text-darken-4">Roger Waters</h4>
-                        <p class="medium-small grey-text">Project Manager</p>                        
+                        <p class="medium-small grey-text">Project Manager</p>
                     </div>
                     <div class="col s2 center-align">
                         <h4 class="card-title grey-text text-darken-4">10+</h4>
-                        <p class="medium-small grey-text">Work Experience</p>                        
+                        <p class="medium-small grey-text">Work Experience</p>
                     </div>
                     <div class="col s2 center-align">
                         <h4 class="card-title grey-text text-darken-4">6</h4>
-                        <p class="medium-small grey-text">Completed Projects</p>                        
-                    </div>                    
+                        <p class="medium-small grey-text">Completed Projects</p>
+                    </div>
                     <div class="col s2 center-align">
                         <h4 class="card-title grey-text text-darken-4">$ 1,253,000</h4>
-                        <p class="medium-small grey-text">Busness Profit</p>                        
-                    </div>                    
+                        <p class="medium-small grey-text">Busness Profit</p>
+                    </div>
                     <div class="col s1 right-align">
                       <a class="btn-floating activator waves-effect waves-light darken-2 right">
                           <i class="mdi-action-perm-identity"></i>
@@ -448,7 +428,7 @@
                     </p>
 
                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    
+
                     <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
                     <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
                     <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 18th June 1990</p>
@@ -456,7 +436,6 @@
                 </div>
             </div>
             <!--/ profile-page-header -->
-
             <!-- profile-page-content -->
             <div id="profile-page-content" class="row">
               <!-- profile-page-sidebar-->
@@ -466,7 +445,7 @@
                   <div class="card-content white-text">
                     <span class="card-title">About Me!</span>
                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>                  
+                  </div>
                 </div>
                 <!-- Profile About  -->
 
@@ -504,14 +483,14 @@
                   <div class="card-content white-text center-align">
                     <p class="card-title"><i class="mdi-social-group-add"></i> 3685</p>
                     <p>Followers</p>
-                  </div>                  
+                  </div>
                 </div>
                 <!-- Profile About  -->
 
                 <!-- Profile feed  -->
                 <ul id="profile-page-about-feed" class="collection z-depth-1">
                   <li class="collection-item avatar">
-                    <img src="images/avatar.jpg" alt="" class="circle">
+                    <img src="../assets/images/avatar.jpg" alt="" class="circle">
                     <span class="title">Project Title</span>
                     <p>Task assigned to new changes.
                       <br> <span class="ultra-small">Second Line</span>
@@ -521,7 +500,7 @@
                   <li class="collection-item avatar">
                     <i class="mdi-file-folder circle"></i>
                     <span class="title">New Project</span>
-                    <p>First Line of Project Work 
+                    <p>First Line of Project Work
                       <br> <span class="ultra-small">Second Line</span>
                     </p>
                     <a href="#!" class="secondary-content"><i class="mdi-social-domain"></i></a>
@@ -644,7 +623,7 @@
                         <div class="card-image waves-effect waves-block waves-light">
                             <div id="map-canvas" data-lat="40.747688" data-lng="-74.004142"></div>
                         </div>
-                        <div class="card-content">                    
+                        <div class="card-content">
                             <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
                                 <i class="mdi-maps-pin-drop"></i>
                             </a>
@@ -653,20 +632,18 @@
                             <p class="blog-post-content">Some more information about this company.</p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Company Name LLC <i class="mdi-navigation-close right"></i></span>                   
+                            <span class="card-title grey-text text-darken-4">Company Name LLC <i class="mdi-navigation-close right"></i></span>
                             <p>Here is some more information about this company. As a creative studio we believe no client is too big nor too small to work with us to obtain good advantage.By combining the creativity of artists with the precision of engineers we develop custom solutions that achieve results.Some more information about this company.</p>
                             <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Manager Name</p>
                             <p><i class="mdi-communication-business cyan-text text-darken-2"></i> 125, ABC Street, New Yourk, USA</p>
                             <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
-                            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> support@geekslabs.com</p>                    
+                            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> support@geekslabs.com</p>
                         </div>
                     </div>
                 </div>
                 <!-- Map Card -->
-
               </div>
               <!-- profile-page-sidebar-->
-
               <!-- profile-page-wall -->
               <div id="profile-page-wall" class="col s12 m8">
                 <!-- profile-page-wall-share -->
@@ -678,7 +655,7 @@
                       <li class="tab col s3"><a class="white-text waves-effect waves-light" href="#AddPhotos"><i class="mdi-image-camera-alt"></i> Add Photos</a>
                       </li>
                       <li class="tab col s3"><a class="white-text waves-effect waves-light" href="#CreateAlbum"><i class="mdi-image-photo-album"></i> Create Album</a>
-                      </li>                      
+                      </li>
                     </ul>
                     <!-- UpdateStatus-->
                     <div id="UpdateStatus" class="tab-content col s12  grey lighten-4">
@@ -705,7 +682,7 @@
                             <!-- Dropdown Structure -->
                             <ul id='profliePost' class='dropdown-content'>
                               <li><a href="#!"><i class="mdi-action-language"></i> Public</a></li>
-                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>                              
+                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>
                               <li><a href="#!"><i class="mdi-action-lock-outline"></i> Only Me</a></li>
                             </ul>
 
@@ -738,7 +715,7 @@
                             <!-- Dropdown Structure -->
                             <ul id='profliePost2' class='dropdown-content'>
                               <li><a href="#!"><i class="mdi-action-language"></i> Public</a></li>
-                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>                              
+                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>
                               <li><a href="#!"><i class="mdi-action-lock-outline"></i> Only Me</a></li>
                             </ul>
 
@@ -771,7 +748,7 @@
                             <!-- Dropdown Structure -->
                             <ul id='profliePost3' class='dropdown-content'>
                               <li><a href="#!"><i class="mdi-action-language"></i> Public</a></li>
-                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>                              
+                              <li><a href="#!"><i class="mdi-action-face-unlock"></i> Friends</a></li>
                               <li><a href="#!"><i class="mdi-action-lock-outline"></i> Only Me</a></li>
                             </ul>
 
@@ -782,7 +759,6 @@
                   </div>
                 </div>
                 <!--/ profile-page-wall-share -->
-
                 <!-- profile-page-wall-posts -->
                 <div id="profile-page-wall-posts"class="row">
                   <div class="col s12">
@@ -791,7 +767,7 @@
                         <div class="card-profile-title">
                           <div class="row">
                             <div class="col s1">
-                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">                        
+                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">
                             </div>
                             <div class="col s10">
                               <p class="grey-text text-darken-4 margin">John Doe</p>
@@ -807,8 +783,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card-image profile-medium">                          
-                          <img src="images/gallary/2.jpg" alt="sample" class="responsive-img profile-post-image profile-medium">                        
+                        <div class="card-image profile-medium">
+                          <img src="images/gallary/2.jpg" alt="sample" class="responsive-img profile-post-image profile-medium">
                           <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -816,23 +792,22 @@
                         </div>
                         <div class="card-action row">
                           <div class="col s4 card-action-share">
-                            <a href="#">Like</a>                          
+                            <a href="#">Like</a>
                             <a href="#">Share</a>
                           </div>
-                          
+
                           <div class="input-field col s8 margin">
                             <input id="profile-comments" type="text" class="validate margin">
                             <label for="profile-comments" class="">Comments</label>
-                          </div>                        
-                        </div>                        
+                          </div>
+                        </div>
                       </div>
-
                       <!-- medium video -->
                       <div id="profile-page-wall-post" class="card">
                         <div class="card-profile-title">
                           <div class="row">
                             <div class="col s1">
-                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">                        
+                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">
                             </div>
                             <div class="col s10">
                               <p class="grey-text text-darken-4 margin">John Doe</p>
@@ -851,7 +826,7 @@
                         <div class="card-image profile-medium">
                           <div class="video-container no-controls">
                             <iframe width="640" height="360" src="https://www.youtube.com/embed/10r9ozshGVE" frameborder="0" allowfullscreen></iframe>
-                          </div>                          
+                          </div>
                           <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -859,23 +834,22 @@
                         </div>
                         <div class="card-action row">
                           <div class="col s4 card-action-share">
-                            <a href="#">Like</a>                          
+                            <a href="#">Like</a>
                             <a href="#">Share</a>
                           </div>
-                          
+
                           <div class="input-field col s8 margin">
                             <input id="profile-comments" type="text" class="validate margin">
                             <label for="profile-comments" class="">Comments</label>
-                          </div>                        
-                        </div>                        
-                      </div>                      
-
+                          </div>
+                        </div>
+                      </div>
                       <!-- small -->
                       <div id="profile-page-wall-post" class="card">
                         <div class="card-profile-title">
                           <div class="row">
                             <div class="col s1">
-                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">                        
+                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">
                             </div>
                             <div class="col s10">
                               <p class="grey-text text-darken-4 margin">John Doe</p>
@@ -892,7 +866,7 @@
                           </div>
                         </div>
                         <div class="card-image profile-small">
-                          <img src="images/gallary/1.jpg" alt="sample" class="responsive-img profile-post-image">                        
+                          <img src="images/gallary/1.jpg" alt="sample" class="responsive-img profile-post-image">
                           <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -900,23 +874,22 @@
                         </div>
                         <div class="card-action row">
                           <div class="col s4 card-action-share">
-                            <a href="#">Like</a>                          
+                            <a href="#">Like</a>
                             <a href="#">Share</a>
                           </div>
-                          
+
                           <div class="input-field col s8 margin">
                             <input id="profile-comments" type="text" class="validate">
                             <label for="profile-comments" class="">Comments</label>
-                          </div>                        
-                        </div>                        
+                          </div>
+                        </div>
                       </div>
-
                       <!-- small -->
                       <div id="profile-page-wall-post" class="card">
                         <div class="card-profile-title">
                           <div class="row">
                             <div class="col s1">
-                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">                        
+                              <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-post-uer-image">
                             </div>
                             <div class="col s10">
                               <p class="grey-text text-darken-4 margin">John Doe</p>
@@ -933,7 +906,7 @@
                           </div>
                         </div>
                         <div class="card-image profile-large">
-                          <img src="images/gallary/3.jpg" alt="sample" class="responsive-img profile-post-image">                        
+                          <img src="images/gallary/3.jpg" alt="sample" class="responsive-img profile-post-image">
                           <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -941,23 +914,21 @@
                         </div>
                         <div class="card-action row">
                           <div class="col s4 card-action-share">
-                            <a href="#">Like</a>                          
+                            <a href="#">Like</a>
                             <a href="#">Share</a>
                           </div>
-                          
+
                           <div class="input-field col s8 margin">
                             <input id="profile-comments" type="text" class="validate">
                             <label for="profile-comments" class="">Comments</label>
-                          </div>                        
-                        </div>                        
+                          </div>
+                        </div>
                       </div>
-                  </div>                  
+                  </div>
                 </div>
                 <!--/ profile-page-wall-posts -->
-
               </div>
               <!--/ profile-page-wall -->
-
             </div>
           </div>
         </div>
@@ -971,16 +942,16 @@
       <aside id="right-sidebar-nav">
         <ul id="chat-out" class="side-nav rightside-navigation">
             <li class="li-hover">
-            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
-            <div id="right-search" class="row">
-                <form class="col s12">
-                    <div class="input-field">
-                        <i class="mdi-action-search prefix"></i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Search</label>
-                    </div>
-                </form>
-            </div>
+              <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+              <div id="right-search" class="row">
+                  <form class="col s12">
+                      <div class="input-field">
+                          <i class="mdi-action-search prefix"></i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Search</label>
+                      </div>
+                  </form>
+              </div>
             </li>
             <li class="li-hover">
                 <ul class="chat-collapsible" data-collapsible="expandable">
@@ -1125,36 +1096,27 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-
-
-
-    <!-- ================================================
-    Scripts
-    ================================================ -->
-    
+  <!-- ============== Scripts ====================== -->
     <!-- jQuery Library -->
-    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <script type="text/javascript" src="../assets/js/plugins/jquery-1.11.2.min.js"></script>
     <!--materialize js-->
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="../assets/js/materialize.js"></script>
     <!--prism-->
-    <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/prism/prism.js"></script>
     <!--scrollbar-->
-    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <!-- chartist -->
-    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>  
-
+    <script type="text/javascript" src="../assets/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <!-- sparkline -->
-    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
-    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
-    
+    <script type="text/javascript" src="../assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/sparkline/sparkline-script.js"></script>
+
     <!-- google map api -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
     <!--google map-->
-    <script type="text/javascript" src="js/plugins/google-map/google-map-script.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/google-map/google-map-script.js"></script>
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins.js"></script>
     <!--custom-script.js - Add your own theme custom JS-->
-    <script type="text/javascript" src="js/custom-script.js"></script>
+    <script type="text/javascript" src="../assets/js/custom-script.js"></script>
 
     <!-- Toast Notification -->
     <script type="text/javascript">
@@ -1171,7 +1133,7 @@
         }, 15000);
     });
     </script>
-    
+
 </body>
 
 </html>

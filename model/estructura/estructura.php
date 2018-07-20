@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * general structure
+	 * Estructura General del Sistema.
 	 */
 	class estructuraGeneral {
 
@@ -51,7 +51,7 @@
 	}
 
 	/**
-	 *
+	 * Estructura que ocupa el administrador.
 	 */
 	class estructuraAdmin {
 
@@ -88,7 +88,7 @@
 
 
 	/**
-	 * Structure CEYE.
+	 * Estructura de CEYE.
 	 */
 	class estructuraCEYE {
 
@@ -96,7 +96,7 @@
 	}
 
 	/**
-	 *
+	 * Estructura de Caja.
 	 */
 	class estructuraCaja {
 
@@ -104,7 +104,7 @@
 	}
 
 	/**
-	 *
+	 * Estructura de Clinica.
 	 */
 	class estructuraClinica {
 
@@ -112,7 +112,7 @@
 	}
 
 	/**
-	 *
+	 * Estructura de Archivo.
 	 */
 	class estructuraArchivo {
 

@@ -1,6 +1,6 @@
 <?php
 
-	class Model extends conexionBD{
+	class Model extends  ConexionDataBase {
 
 
 

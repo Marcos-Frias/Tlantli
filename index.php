@@ -1,7 +1,7 @@
 <?php
-	require_once "models/conexion.php";
-	require_once "models/model.php";
-	require_once "controllers/controller.php";
+	require_once "model/ConexionDataBase.php";
+	require_once "model/Model.php";
+	require_once "controller/controller.php";
 
 	$index = new controller();
 	$index-> inicio();

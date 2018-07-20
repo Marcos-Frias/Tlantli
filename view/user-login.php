@@ -1,7 +1,7 @@
 <?php
-	include_once "models/estructura/estructura.php";
-	include_once "models/modelAdmin/modeloAdmin.php";
-	include_once "controllers/controller.php";
+	include_once "model/estructura/estructura.php";
+	include_once "model/modelAdmin/modeloAdmin.php";
+	include_once "controller/controller.php";
 	$estructura = new estructuraGeneral();
   $controlador = new controller();
 ?>
@@ -15,7 +15,6 @@
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
     <title>Login | Tlantli</title>
-
     <!-- Favicons-->
     <link rel="icon" href="assets/images/favicon/estoma.png" sizes="32x32">
     <!-- Favicons-->
@@ -24,76 +23,61 @@
     <meta name="msapplication-TileColor" content="#00bcd4">
     <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png">
     <!-- CORE CSS-->
-
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
     <link href="assets/css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="assets/css/layouts/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
-
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="assets/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="assets/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-
   </head>
-
   <body>
     <?php echo $estructura->loadPage()  ?>
-
-	<div id="login-page" class="row">
-				<div class="col s12 z-depth-4 card-panel">
-					<form class="login-form" method="post">
-
-						<div class="row">
-							<div class="input-field col s12 center">
-								<img src="assets/images/logo-Uma-dorado.jpg" alt="" class="circle responsive-img valign profile-image-login">
-								<p class="center yellow-text">SISTEMA CLÍNICA - TLANTLI</p>
-							</div>
+		<div id="login-page" class="row">
+			<div class="col s12 z-depth-4 card-panel">
+				<form class="login-form" method="post">
+					<div class="row">
+						<div class="input-field col s12 center">
+							<img src="assets/images/logo-Uma-dorado.jpg" alt="" class="circle responsive-img valign profile-image-login">
+							<p class="center yellow-text">SISTEMA CLÍNICA - TLANTLI</p>
 						</div>
-
-						<div class="row margin">
-							<div class="input-field col s12">
-								<i class="mdi-social-person-outline prefix"></i>
-								<input id="nickname" name="nickname" type="text">
-								<label for="nickname" class="center-align">Nombre de Usuario</label>
-							</div>
+					</div>
+					<div class="row margin">
+						<div class="input-field col s12">
+							<i class="mdi-social-person-outline prefix"></i>
+							<input id="nickname" name="nickname" type="text">
+							<label for="nickname" class="center-align">Nombre de Usuario</label>
 						</div>
-
-						<div class="row margin">
-							<div class="input-field col s12">
-								<i class="mdi-action-lock-outline prefix"></i>
-								<input id="password" name="password" type="password">
-								<label for="password">Contraseña</label>
-							</div>
+					</div>
+					<div class="row margin">
+						<div class="input-field col s12">
+							<i class="mdi-action-lock-outline prefix"></i>
+							<input id="password" name="password" type="password">
+							<label for="password">Contraseña</label>
 						</div>
-
-						<?php echo $controlador->showCargoUser()?>
-
-						<div class="row">
-							<div class="input-field col s12 m12 l12  login-text">
-								<input type="checkbox" id="remember-me" />
-								<label for="remember-me">Recordar mis datos</label>
-							</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m12 l12  login-text">
+							<input type="checkbox" id="remember-me" />
+							<label for="remember-me">Recordar mis datos</label>
 						</div>
-
-						<div class="row">
-							<div class="input-field col s10 offset-s2">
-								<input type="submit" class="btn" value="Iniciar sesión">
-							</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s10 offset-s2">
+							<input type="submit" class="btn" value="Iniciar sesión">
 						</div>
-
-						<div class="row">
-							<div class="input-field col s8 m8 12">
-								<p class="margin medium-small center">
-									<a href="user-forgot-password.html">¿Olvidaste la contraseña?</a>
-								</p>
-							</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s8 m8 12">
+							<p class="margin medium-small center">
+								<a href="user-forgot-password.html">¿Olvidaste la contraseña?</a>
+							</p>
 						</div>
-
-			  		</form>
-				</div>
-		  	</div>'
-
+					</div>
+				</form>
+			</div>
+		</div>
     <!-- ============== Scripts ====================== -->
     <!-- jQuery Library -->
     <script type="text/javascript" src="assets/js/plugins/jquery-1.11.2.min.js"></script>

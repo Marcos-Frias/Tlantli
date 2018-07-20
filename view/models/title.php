@@ -2,7 +2,7 @@
 		/**
 		 * Estos metodos mandan a llamar campos que no cambian.
 		 */
-		class modulos{
+		class modulos {
 
 			#load-page
 			function load(){
