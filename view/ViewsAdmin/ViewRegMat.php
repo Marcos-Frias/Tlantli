@@ -3,17 +3,12 @@
 	include_once "../../model/estructura/estructura.php";
 	include_once "../../model/modelAdmin/modeloAdmin.php";
 	include_once "../../controller/controllerAdmin/contAdmin.php";
-
 	$estructura = new estructuraGeneral();
 	$estructuraAdmin = new estructuraAdmin();
 	$adminController = new controllerAdmin();
-
-	$adminController -> insertMateria();
-	#$adminController -> asignarMateria();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -22,7 +17,6 @@
 		<meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
 		<meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
 		<title>Registro Materias - Tantli</title>
-
 		<!-- Favicons-->
 		<link rel="icon" href="../../assets/images/favicon/estoma.png" sizes="32x32">
 		<!-- Favicons-->
@@ -30,15 +24,12 @@
 		<!-- For iPhone -->
 		<meta name="msapplication-TileColor" content="#00bcd4">
 		<meta name="msapplication-TileImage" content="../../images/favicon/mstile-144x144.png">
-		<!-- For Windows Phone -->
-
 		<!-- CORE CSS-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="../../assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="../../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<!-- Custome CSS-->
 		<link href="../../assets/css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
-
 		<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
 		<link href="../../assets/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="../../assets/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -46,22 +37,15 @@
 		<!--Google Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 	</head>
-
 	<body>
 		<?php echo $estructura->loadPage()  ?>
 		<?php echo $estructura->headerPage()?>
-
 		<div id="main">
-
 			<div class="wrapper">
 				<?php echo $estructuraAdmin->menuAdmin()  ?>
-
 				<section id="content">
-
 					<div class="container">
-
 						<div class="section">
-
 							<div class="divider"></div><div class="divider"></div><div class="divider"></div>
 							<h1 class="center-align"><strong>REGISTRO DE MATERIAS</strong></h1>
 							<div class="divider"></div><div class="divider"></div><div class="divider"></div>
@@ -69,15 +53,12 @@
 								<div class="row">
 									<form class="col s12" method="post" >
 										<div class="row">
-
 											<div class="input-field col s12 m5 12">
 												<i class="material-icons prefix">list</i>
 												<input id="nameMateria" name="nameMateria" type="text" class="validate">
 												<label for="nameMateria">NOMBRE MATERIA:</label>
 											</div>
-
 											<?php echo $adminController->showGrado() ?>
-
 											<div class="input-field col s3 offset-s1">
 												<button class="medium btn-large cyan waves-effect waves-light" type="submit" name="action">
 													<i class="material-icons left">add</i> REGISTRAR MATERIA
@@ -87,20 +68,16 @@
 									</form>
 								</div>
 							</div>
-
 							<div class="divider "></div><div class="divider"></div><div class="divider"></div>
 							<h1 class="center-align"><strong>ASIGNACIÓN DE MATERIAS</strong></h1>
 							<div class="divider"></div><div class="divider"></div><div class="divider"></div>
-
 							<div class="col s12 m12 l6">
 								<div class="row">
 									<form class="col s12" method="post">
 										<div class="row">
-
 											<?php echo $adminController->showMaterias() ?>
 											<?php echo $adminController->showDocentes() ?>
 											<?php echo $adminController->showPeriodo() ?>
-
 											<div class="input-field col s12 m3 12">
 												<button class="medium btn-large cyan waves-effect waves-light" type="submit" name="action">
 													<i class="material-icons left">playlist_add_check</i>ASIGNAR MATERIA
@@ -110,19 +87,12 @@
 									</form>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
-
 				</section>
-
 			</div>
-
 		</div>
-
-    	<?php echo $estructura->footerPage()  ?>
-
+    <?php echo $estructura->footerPage()  ?>
 		<!-- ============== Scripts ====================== -->
 		<!-- jQuery Library -->
 		<script type="text/javascript" src="../../assets/js/plugins/jquery-1.11.2.min.js"></script>
@@ -138,7 +108,5 @@
 		<script type="text/javascript" src="../../assets/js/plugins.js"></script>
 		<!--custom-script.js - Add your own theme custom JS-->
 		<script type="text/javascript" src="../../assets/js/custom-script.js"></script>
-
 	</body>
-
 </html>
