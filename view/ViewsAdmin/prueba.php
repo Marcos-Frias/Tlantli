@@ -6,7 +6,6 @@
 	$estructura = new estructuraGeneral();
 	$estructuraAdmin = new estructuraAdmin();
 	$administrador = new controllerAdmin();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
